@@ -1,0 +1,311 @@
+/* ---- Estils exemple de layout ---------------------------------------------------- */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #d4def4;
+	background-image: linear-gradient(#d4def4, #fff);
+	background-image: -webkit-linear-gradient(#d4def4, #fff);
+	background-image: -moz-linear-gradient(#d4def4, #fff);
+	background-image: -o-linear-gradient(#d4def4, #fff);
+	font: 14px/1.6em "verdana", sans-serif;
+	color: #000;
+}
+
+p {
+	margin: 1em 0;
+	padding: 0;
+}
+
+h1, h2, h3 {
+	margin: 1em 0;
+	padding:0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+h1 {
+	font-size: 3.571em;
+}
+
+h2 {
+	font-size: 2.143em;
+	line-height: 1.4em;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 1.286em;
+	font-weight: normal;
+}
+
+ul, ol {
+	margin: 1em 0 1em 2em;
+	padding:0;
+}
+
+a {
+	text-decoration: none;
+	color:#192666;
+}
+
+a:hover {
+	color:#4F6AD7;
+}
+
+/* ---- Layout ------------------------------------------------------------- */
+
+#container {
+	width: 90%;
+  	margin: 0 auto;
+}
+
+header {
+	position: relative;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #233C9B url("../img/header.png") no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+#content {
+	margin: 0;
+	background: #FFF;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#content main {
+  float: left;
+  width: 70%;
+  margin: 0;
+  padding:0 1.429em;
+  background: #FFF;
+}
+
+#content #secundari {
+  float: right;
+  width: 30%;
+  margin: 0;
+  padding: 0;
+  background: #FFF;
+}
+
+footer {
+  clear: both;
+  height: 150px;
+  background-color: #393a55;
+  color: #fff;
+  position: relative;
+}
+
+/* ---- Capçalera ----------------------------------------------------------- */
+header #logo {
+  position: absolute;
+  top: 55px;
+  left: 55px;
+  margin: 0;
+}
+
+header #logo a {
+  color: #FFF;
+  display: block;
+  text-decoration: none;
+}
+
+header #logo a:hover {
+  color: #B5C4E3;
+}
+
+
+/* ---- Menú de navegació principal --------------------------------------------------------------- */
+nav {
+  background: #192666;
+  margin: 0;
+  padding: 0.714em 0 0 0;
+  clear: left;
+  font-size: 12px;
+}
+
+nav ul {
+  margin: 0 0.714em;
+  padding: 0;
+  list-style:none;
+}
+
+nav ul li {
+  margin: 0 0.357em 0 0;
+  padding: 0;
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  position: relative;
+  padding: 0.357em 1.071em;
+  border: 0;
+  background: #253575;
+  color: #B5C4E3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: #31479B;
+}
+
+nav ul li.seleccionat a {
+  background: #FFF;
+  color: #000;
+}
+
+/* ---- Continguts --------------------------------------------------------- */
+#content article {
+  clear: both;
+  margin: 0;
+  padding: 1.429em;
+}
+
+#content article img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+#content article h2 {
+  margin: 0;
+  padding: 0.714em 0;
+  color: #192666;
+}
+
+#content .info {
+  margin: 0.714em 0;
+  padding-bottom: 0.571em;
+  border-bottom: 1px solid #DEE5FD;
+  color:#6685CC;
+  font-size: 0.786em;
+}
+
+#content .info a { 
+	color:#6685CC;
+}
+
+#content .info a:hover { 
+	color:#000; 
+}
+
+#content .info span.data, #content .info span.categoria, #content .info span.autor, #content .info span.comentaris {
+  	padding-left: 1.2em;
+}
+
+#content .info span.data { 
+	background: url("../img/icona-data.gif") 0 50% no-repeat; 
+}
+
+#content .info span.categoria { 
+	background: url("../img/icona-categoria.gif") 0 50% no-repeat; 
+	margin-left: 0.571em; 
+}
+
+#content .info span.autor { 
+	background: url("../img/icona-autor.gif") 0 50% no-repeat; 
+	margin-left: 0.571em; 
+}
+
+#content .info span.comentaris { 
+	background: url("../img/icona-comentaris.gif") 0 50% no-repeat; 
+	margin-left: 0.571em; 
+}
+
+#content p.llegeix-mes {
+	border-top: 1px dotted #4F6AD7;
+}
+
+#content #secundari h3 {
+	padding: 0.714em 0 0.714em 0.714em;
+	margin-top: 1.429em;
+	background: #A0B9F3;
+	color: #192666;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#content #secundari #qui-soc {
+  text-align: center;
+  font-size: 0.857em;
+}
+
+#content #secundari #qui-soc img {
+  margin: 0.286em 0.357em 0 0;
+  border-radius: 50%;
+}
+
+#content #secundari div {
+  padding: 0 0.714em;
+}
+
+#content #secundari ul {
+  margin: 1.071em 0;
+  padding: 0;
+  list-style:none;
+}
+
+#content #secundari li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #E0E8FA;
+}
+
+#content #secundari li a {
+  display: block;
+  padding: 0.214em 0 0.214em 1.571em;
+  background: url("../img/icona-elements.gif") 3px 9px no-repeat;
+  text-decoration: none;
+}
+
+#content #secundari li a:hover {
+	background-color: #E0E8FA;
+	color: #192666;
+}
+
+
+
+/* ---- Peu ---------------------------------------------------------------- */
+footer p {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	font-size: 12px;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px dotted #fff;
+}
+
+footer p a:hover {
+    color: #B5C4E3;
+}
+
+
+/* Media query */
+
+/* Molt petit */
+@media(max-width:767px){
+	body {font-size: 12px;}
+	#content main {width: 100%;}
+	#content #secundari {width: 100%;}
+	#content article { padding: 0;}
+	#content .info span.data, #content .info span.categoria, #content .info span.autor, #content .info span.comentaris {display: block; margin-left: 0.571em; }
+}
+

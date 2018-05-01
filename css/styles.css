@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+/*font-family: 'Gugi', cursive;*/
+
+* {
+    margin: 0;
+    padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+header {
+    position: relative;
+    color: #9c0303;
+    font-family: 'Gugi', cursive;
+    font-size: 30px;
+    }
+
+header h1 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    padding: 100px  50px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+header img {
+    width: 100%;
+    display: block;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    background-color: #ce7e7e;
+    width: 100%;
+    text-align: left;
+
+}
+
+ul.breadcrumbs {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+ul.breadcrumbs li {
+    display: inline;
+    padding-top: 10px;
+}
+
+ul.breadcrumbs li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Gugi', cursive;
+}
+
+ul.breadcrumbs li a:hover {
+    color: #2e3841;
+    text-decoration: underline;
+}
+
+.icon {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+.lead {
+    width: 100%;
+    height: 5%;
+    background-color:#8b3030;
+    text-align: center;
+    line-height: 1.9em;
+    padding: 5%;    
+}
+.lead p {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+.arrow {
+    padding-top: 30px;
+}
+
+article div.left {
+    float: left;
+    width: 30%;
+    height: 50%;
+    background-color: grey;
+    margin: 10%;
+    padding: 100px;
+    border-radius: 10%;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+article div.right {
+    float: right;
+    width: 30%;
+    height: 50%;
+    background-color: grey;
+    margin: 10%;
+    padding: 100px;
+    border-radius: 10%;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+article div.left img {
+    display: block;
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 20%;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 30%;
+    background-color: whitesmoke;
+}
+
+article div.right img {
+    display: block;
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30%;
+    background-color: whitesmoke;
+}
+h2 {
+    line-height: 1.9em;
+}
+
+footer, .lead {
+    clear: both;
+}
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: #8b3030;
+    padding: 20px;
+    color: whitesmoke;
+    text-align: right;
+}
+
+.arrow-up
+{-webkit-transform:rotate(180deg);
+-moz-transform:rotate(180deg);
+-o-transform:rotate(180deg);
+-ms-transform:rotate(180deg);
+transform:rotate(180deg);
+}
+
+.up {
+    padding-right: 20px;
+    text-align: right;
+}
+
+/*Accessibility page*/
+
+.accessibility {
+    position: inherit;
+    background-color: grey;
+    text-align: left;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    }
+
+header.accessibility {
+    width: 100%;
+    display: block;
+}
+
+
